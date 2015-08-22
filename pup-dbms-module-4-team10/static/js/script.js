@@ -35,6 +35,7 @@ function onFormSubmit(event){
 
 }
 
+
 function loadAllthesis_list() {
 	var thesis_list_api = '/api/thesis';
 	$.get(thesis_list_api, {}, function(response){
@@ -44,7 +45,7 @@ function loadAllthesis_list() {
 	$('tr:eq(1)').append('<td >'+ thesis.user_id + '</td>');
 	$('tr:eq(1)').append('<td >'+ thesis.user_email + '</td>');
     $('tr:eq(1)').append('<td >'+ thesis.year + '</td>');
-    $('tr:eq(1)').append('<td ">'+ thesis.title + '</td>') ;
+    $('tr:eq(1)').append('<td >'+ thesis.title + '</td>') ;
 	$('tr:eq(1)').append('<td >'+  (' <a  href=\'thesis/edit/'+thesis.id+'\'>Edit</a>')+ ' ' + ('<a href=\'thesis/delete/'+thesis.id+'\'>Delete</a>')+ '</td>') ;
 	
 });
@@ -59,8 +60,7 @@ function DeleteEntry(event){
 $(document).on('click',  '.buttn' , DeleteEntry)
 
 $('.create-form').submit(onFormSubmit)
-loadAllthesis_list()
-
+	loadAllthesis_list()
 $('.create-form').submit(function(onFormSubmit){ 
     this.reset();
 

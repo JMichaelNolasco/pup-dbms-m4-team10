@@ -44,6 +44,8 @@
                             <li><a class="login" href="{{ url|safe }}"> <i class="fa fa-user"></i>{{ url_linktext }} {{user_id}} </a></li>
 
                             </ul>
+
+
         </div>
       </div>
     </nav>
@@ -58,9 +60,10 @@
 <div class="col-md-12">
         <h1 class="title" >CpE Thesis Database </h1> 
         <h4 class="subtitle">Explore and browse variety of researches by PUP CpE Department</h4>
+
         
-       <!--  <<img class="col-md-7 col-sm-6 col-xs-12 animated fadeInLeft" src="static/img/hero/macbook.png" alt="" >  -->
-        <div class="col-sm-5 form-box animated fadeInRight delay-0-1" style="position:absolute; top:10px; LEFT:700px; ">
+       
+        <div class="col-sm-5 form-box animated fadeInRight delay-0-5" style="position:absolute; top:10px; LEFT:700px; ">
                             
                             <div class="form-top">
                                 <div class="form-top-left">
@@ -120,17 +123,9 @@
                                        
                                     </tr>
                                     {% else %}
-                                    <a type="button" class="btn btn-danger btn-md" href="{{ url|safe }}"> <i class="fa fa-user"></i> Login to Create New Entry</a>
-                                    <ul class= "thesis-list" > </ul>
-                                    <table class=list-section-login >
-                                    <tr>
-                                        <td class="list-table" >Created by (User ID) </td>
-                                        <td class="list-table" >Created by (User Email) </td>
-                                        <td class="list-table" >Year</td>
-                                        <td class="list-table">Title</td>
-                                        <td class="list-table">Remarks</td>
-                                       
-                                    </tr>
+                                    <img class="col-md-12 col-sm-6 col-xs-12 animated fadeInLeft" width="800%" height="150%" src="static/img/hero/macbook.png" style="position:absolute ;  top:100px  ; left:-625px  ; " alt="" >
+                                    <a type="button" class="btn btn-danger btn-md" href="{{ url|safe }}"> <i class="fa fa-user"></i> Login to Create /Edit/View Entry</a>
+                                    
 
                                     {% endif %}
                                 </center>
@@ -145,6 +140,7 @@
 </div>
                                     
     </div>
+
 </div>
 </section>
 
